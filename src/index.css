@@ -1,13 +1,94 @@
 body {
-  font-family: Georgia, serif;
-  background-color: #f8f8f8;
+  font-family: 'Inter', sans-serif;
+  background: #f3f4f6;
   margin: 0;
   padding: 0;
+  color: #1f2937;
+}
+
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
 }
 
 #logo-image {
-  width: 30px;
-  margin-right: 10px;
+  width: 40px;
+  margin-right: 12px;
 }
 
-/* Add your own custom styles here */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f2937;
+  padding: 12px 20px;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+nav a, nav button {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+nav button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #ef4444;
+}
+
+nav a:hover, nav button:hover {
+  text-decoration: underline;
+  background-color: #dc2626;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2563eb;
+}
